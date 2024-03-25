@@ -11,7 +11,6 @@ interface About {
   interface BoxProps {
     title: string;
     content: string;
-    logo:string;
   }
 
   
