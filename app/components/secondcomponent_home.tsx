@@ -8,7 +8,7 @@ interface About {
 }
 
 const about: About = {
-  title: "ABOUT",
+  title: "About",
   content1: `
     Bitbyte-TPC is a peer-learning community filled with tech-enthusiasts just like YOU!
     We intend to keep your interest kindled with regular thought-provoking sessions
@@ -25,11 +25,11 @@ const about: About = {
 
 function About() {
   return (
-    <div className="flex flex-col items-center">
-      <div className="text-transparent bg-clip-text bg-gradient-linear text-4xl md:text-6xl">
+    <div className="flex flex-col items-center ">
+      <div className="text-transparent bg-clip-text bg-gradient-linear text-4xl md:text-6xl font-mono">
         {about.title}
       </div>
-      <div className="flex justify-center flex-wrap md:space-x-4 ">
+      <div className="flex justify-center flex-wrap md:space-x-4 py-5">
         <Cards text={"Design"} img_src={"/pencil.svg"} />
         <Cards text={"Develop"} img_src={"/brackets.svg"}/>
         <Cards text={"Test"} img_src={"/graph.svg"}/>
@@ -43,8 +43,8 @@ function About() {
 
 function SecondComponent() {
   return (
-    <div className="flex flex-row md:flex-row p-4">
-      <div className="  ml-auto ">
+    <div className="flex flex-row md:flex-row p-4 my-7">
+      <div className="  mx-3 ">
         <About />
       </div>
     </div>

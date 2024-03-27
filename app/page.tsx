@@ -1,7 +1,7 @@
 import Firstcomponent from "./components/firstcomponent_home";
 import Navbar from "./components/navbar";
 import SecondComponent from "./components/secondcomponent_home";
-
+import FourthComponent from "./components/fourthcomponent_home";
 
 export default function Home() {
   return (
@@ -9,9 +9,14 @@ export default function Home() {
       <div className="navbar m-14">
         <Navbar items={[]} />
       </div>
-      <div><Firstcomponent/></div>
+      <div>
+        <Firstcomponent />
+      </div>
       <div className="flex ">
-        <SecondComponent/>
+        <SecondComponent />
+      </div>
+      <div>
+        <FourthComponent />
       </div>
     </div>
   );
