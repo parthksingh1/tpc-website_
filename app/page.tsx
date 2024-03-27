@@ -1,6 +1,7 @@
 import Firstcomponent from "./components/firstcomponent_home";
 import Navbar from "./components/navbar";
 import SecondComponent from "./components/secondcomponent_home";
+import FourthComponent from "./components/fourthcomponent_home";
 
 
 export default function Home() {
@@ -12,6 +13,9 @@ export default function Home() {
       <div><Firstcomponent/></div>
       <div className="flex ">
         <SecondComponent/>
+      </div>
+      <div>
+        <FourthComponent/> 
       </div>
     </div>
   );
