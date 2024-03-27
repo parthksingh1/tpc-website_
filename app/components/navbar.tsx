@@ -1,11 +1,11 @@
 import React from 'react';
 import Image from "next/image";
 
-interface NavigationMenuProps {
+interface NavMenuProps {
   items: string[] | undefined;
 }
 
-const NavigationMenuDemo: React.FC<NavigationMenuProps> = ({ items }) => {
+function Navbar({ items }: NavMenuProps) {
   const defaultItems = ['Teams', 'Projects', 'Alumni','Events'];
 
   return (
@@ -33,6 +33,6 @@ const NavigationMenuDemo: React.FC<NavigationMenuProps> = ({ items }) => {
       </div>
     </div>
   );
-};
+}
 
-export default NavigationMenuDemo;
+export default Navbar;
