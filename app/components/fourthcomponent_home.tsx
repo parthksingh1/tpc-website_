@@ -22,7 +22,7 @@ const content3: Contents = {
 
 function fourthcomponent_home() {
 return (
-    <div className="space-y-8 text-wrap mx-4 my-20">
+    <div className="space-y-8 text-wrap md:mx-16 mx-8 md:my-32 my-28 font-mono">
         <div>
             <h1 className="text-2xl font-bold mb-4">{content1.title}</h1>
             <p className="mb-8">{content1.content}</p>
@@ -31,7 +31,7 @@ return (
             <h1 className="text-2xl font-bold mb-4">{content2.title}</h1>
             <p className="mb-8 flex items-center">
                 {content2.content}
-                <span className="ml-auto">
+                <span className="ml-auto mx-4 md:mx-10">
                     <Image
                         src="/rectangle.svg"
                         alt=""
@@ -44,9 +44,9 @@ return (
         </div>
         <div>
             <h1 className="text-2xl font-bold mb-4">{content3.title}</h1>
-            <p className="mb-8 flex items-center">
+            <p className="mb-8 flex items-center ">
                 {content3.content}
-                <span className="ml-auto">
+                <span className="ml-auto mx-4 md:mx-10">
                     <Image
                         src="/rectangle.svg"
                         alt=""
