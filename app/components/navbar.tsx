@@ -20,11 +20,11 @@ function Navbar({ items }: NavMenuProps) {
         />
       </div>
       <div className="flex items-center">
-        <nav className="flex space-x-4 bg-custom-gray px-10 py-3 rounded-full sm:flex hidden">
+        <nav className="flex space-x-4 bg-custom-gray p-5 rounded-full sm:flex hidden">
           {(items && items.length > 0 ? items : defaultItems).map((item) => (
             <button
               key={item}
-              className="px-3 py-2 bg-custom-gray-light hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 rounded-full"
+              className="px-5 py-4 text-xl bg-custom-gray-light hover:text-gray-900 border-transparent focus:border-transparent rounded-full"
             >
               {item}
             </button>

@@ -25,29 +25,25 @@ const about: About = {
 
 function About() {
   return (
-    <div className="flex flex-col justify-around items-center">
-      <div className="text-transparent bg-clip-text bg-gradient-linear text-4xl md:text-6xl font-mono font-bold">
+    <div className="flex flex-col justify-around items-center mx-auto ">
+      <div className="text-transparent bg-clip-text bg-gradient-linear text-4xl md:text-7xl font-mono font-bold">
         {about.title}
       </div>
       <div className="flex flex-wrap item-center justify-around w-4/5 md:justify-around md:my-20 py-5">
-        <Cards text={"Design"} img_src={"/pencil.svg"} />
+        <Cards text={"Design"} img_src={"/pencil.svg"}/>
         <Cards text={"Develop"} img_src={"/brackets.svg"}/>
         <Cards text={"Test"} img_src={"/graph.svg"}/>
         <Cards text={"Deploy"} img_src={"/rocket.svg"}/>
       </div>
-      <div className="py-2 text-lg md:text-xl text-center font-mono md:px-16">{about.content1}</div>
-      <div className="py-2 text-lg md:text-xl text-center font-mono md:px-16">{about.content2}</div>
+      <div className="py-2 text-lg md:text-xl text-center font-mono md:px-16 max-w-screen-xl min-w-90 w-3/4">{about.content1}</div>
+      <div className="py-2 text-lg md:text-xl text-center font-mono md:px-16  max-w-screen-xl min-w-90 w-3/4  ">{about.content2}</div>
     </div>
   );
 }
 
 function SecondComponent() {
   return (
-    <div className="flex flex-row md:flex-row p-4 my-7">
-      <div className="  mx-3 ">
         <About />
-      </div>
-    </div>
   );
 }
 
