@@ -14,10 +14,10 @@ interface CardProps {
 
 function Cards({ text, img_src }: CardProps) {
   return (
-    <Card className="bg-custom-gray border-0 flex my-2 rounded-xl p-4">
+    <Card className="bg-custom-gray border-0 flex rounded-xl px-20 py-10">
       <CardHeader>
-        <CardTitle className="md:p-5">
-          <Image src={img_src} alt="" width={130} height={0} />
+        <CardTitle className="md:p-6">
+          <Image src={img_src} alt="" width={100} height={0} />
         </CardTitle>
         <CardDescription className="flex justify-center font-mono text-white text-2xl">{text}</CardDescription>
       </CardHeader>

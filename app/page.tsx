@@ -12,7 +12,7 @@ export default function Home() {
       <div>
         <Firstcomponent />
       </div>
-      <div className="flex ">
+      <div>
         <SecondComponent />
       </div>
       <div>
