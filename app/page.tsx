@@ -6,9 +6,7 @@ import FourthComponent from "./components/fourthcomponent_home";
 export default function Home() {
   return (
     <div className="flex max-h-screen flex-col  bg-black text-white">
-      
-        <Navbar items={[]} />
-      
+      <Navbar />
       <div>
         <Firstcomponent />
       </div>
