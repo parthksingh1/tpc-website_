@@ -75,3 +75,7 @@
     @apply bg-black text-foreground;
   }
 }
+
+.hover-navbar {
+  background-color:linear-gradient(119.51deg, #3CFF5B -4.95%, #2FCDFF 39.98%)
+}
