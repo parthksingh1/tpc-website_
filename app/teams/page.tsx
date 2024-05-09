@@ -1,13 +1,14 @@
-import React from 'react'
-import Navbar from '../components/navbar';
 
-const Teams = () => {
-  return (
-    <div className="flex max-h-screen flex-col  bg-black text-white">
-      <Navbar />
-      <p>Teams</p>
-    </div>
-  )
+import Navbar from "../components/navbar"
+import ContainerComponent from "./ContainerComponent";
+
+export default function page() {
+    return (
+        <>
+        <Navbar items={[]}/>
+        <ContainerComponent/>
+        </>
+        
+    );
 }
 
-export default Teams;
