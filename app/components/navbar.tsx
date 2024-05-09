@@ -1,12 +1,30 @@
 
 import Image from "next/image";
+import { Link } from 'lucide-react';
 
-interface NavMenuProps {
-  items: string[] | undefined;
+interface NavItem {
+  label: string;
+  href: string;
 }
 
-function Navbar({ items }: NavMenuProps) {
-  const defaultItems = ['Teams', 'Projects', 'Alumni','Events'];
+const navigationItems: NavItem[] = [
+  { label: 'Teams', href: '/teams' },
+  { label: 'Projects', href: '/projects' },
+  { label: 'Alumni', href: '/alumni' },
+  { label: 'Events', href: '/events' },
+]
+
+const NavItem = ( { label, href }: NavItem ) => {
+  return (
+    <div className="text-white text-xl p-3 bg-custom-gray-light hover:bg-[#3CFF5B] border-transparent focus:border-transparent rounded-full">
+      <a href={href}>
+        <p>{label}</p>
+      </a>
+    </div>
+  );
+}
+
+function Navbar() {
 
   return (
     <div className="flex justify-center items-center m-[3vh] p-1">
@@ -19,15 +37,10 @@ function Navbar({ items }: NavMenuProps) {
           priority
         />
       </div>
-      <div className="flex items-center ">
+      <div className="flex items-center">
         <nav className="h-[75px] w-[500px] p-3 flex justify-around bg-custom-gray  rounded-full sm:flex hidden">
-          {(items && items.length > 0 ? items : defaultItems).map((item) => (
-            <button
-              key={item}
-              className="text-white text-xl p-3 bg-custom-gray-light hover:bg-[#3CFF5B] border-transparent focus:border-transparent rounded-full"
-            >
-              {item}
-            </button>
+          {navigationItems.map((item) => (
+            <NavItem key={item.label} label={item.label} href={item.href} />
           ))}
         </nav>
         <div className="sm:hidden cursor-pointer absolute right-2 m-8 p-2">
